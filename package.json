@@ -1,0 +1,46 @@
+{
+  "name": "gulp-122017",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-cheerio": "^0.6.3",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-nodemon": "^2.4.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^3.2.1",
+    "gulp-sass-glob": "^1.0.9",
+    "gulp-sass-inline-svg": "^1.0.3",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-webpack": "^1.5.0",
+    "sass-module-importer": "^1.4.0",
+    "webpack": "^4.28.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0",
+    "pug": "^2.0.3",
+    "vue": "^2.5.22"
+  }
+}
