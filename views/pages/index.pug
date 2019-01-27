@@ -4,5 +4,17 @@ block variables
   - var title = 'Главная страница'
 
 block content
-  h1 Главная страница
-  .block
+  section.section.hero
+    .hero__links
+      ul.socials
+        each item in ['vk', 'tv', 'in']
+          li.socials.item
+            a(href=`${item}`).socials__link
+    .hero__menu.hamburger
+    .hero__title  
+      .section-title
+        img.section-title__img
+    .arrow-down.hero__scroll-button
+  section.section.about
+  section.section.map
+  footer.footer
