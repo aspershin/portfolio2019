@@ -6,15 +6,17 @@ block variables
 block content
   section.section.hero
     .hero__links
-      - var socials = [
-        ['vk', 'vk.com'],
-        ['vk', 'vk.com'],
-        ['vk', 'vk.com']
-      ]
+      - 
+        var socials = [
+          ['vk', 'vk.com'],
+          ['tw', 'twitter.com'],
+          ['in', 'in.com'],
+        ]
       ul.socials
-        each item in ['vk', 'tv', 'in']
+        each item in socials
           li.socials.item
-            a(href=`${item}`).socials__link
+          - console.log(item)
+            a(href=`${item[1]}`).socials__link #{item[0]}
     .hero__menu.hamburger
     .hero__title  
       .section-title
