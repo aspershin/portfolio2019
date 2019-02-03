@@ -1,0 +1,18 @@
+.hero {
+    background: url(../../images/bg/hero.png) no-repeat center center;
+    background-size: cover;
+    border: 1px solid red;
+    position: relative;
+}
+
+.hero__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
