@@ -16,3 +16,22 @@
     flex-direction: row;
     padding: 5px;
 }
+
+.user__pic {
+    width: 100px;
+}
+
+.section-title__img {
+    background-image: url(../../images/content/user-full.jpg);
+    width: 200px;
+    min-height: 200px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.hero__title {
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 300px;
+    text-align: center;
+}
