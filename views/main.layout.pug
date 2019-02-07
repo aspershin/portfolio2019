@@ -7,6 +7,9 @@ html(lang="ru")
     meta(charset="utf-8")
     meta(content="ie=edge" http-equiv="x-ua-compatible")
     meta(content="width=device-width, initial-scale=1" name="viewport")
+    //- script(async defer scr="https://maps.googleapis.com/maps/api/js?key=AIzaSyALKvZu7DcQHR689o1h-jksRfdK9iE3KmY&callback=initMap")
+
+    script(async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap")
     
     title #{title}
 
@@ -15,4 +18,3 @@ html(lang="ru")
     .wrapper
       block content
     script(src='/scripts/main.bundle.js')
-    script(async defer scr="https://maps.googleapis.com/maps/api/js?key=AIzaSyALKvZu7DcQHR689o1h-jksRfdK9iE3KmY&callback=initMap")
