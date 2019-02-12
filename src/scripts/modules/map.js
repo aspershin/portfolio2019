@@ -15,3 +15,9 @@
     title: 'Hello World!'
   });
 }
+
+// scr="https://maps.googleapis.com/maps/api/js?key=AIzaSyALKvZu7DcQHR689o1h-jksRfdK9iE3KmY&callback=initMap"
+
+    // script(async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap")
+
+console.log('hello from map');
