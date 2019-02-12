@@ -1,5 +1,5 @@
   function initMap() {
-    var myLatLng = {lat: -25, lng: 131};
+    var myLatLng = {lat: -25.363, lng: 131.044};
 
   // Create a map object and specify the DOM element
   // for display.
@@ -15,6 +15,9 @@
     title: 'Hello World!'
   });
 }
+
+global.initMap = initMap;
+window.initMap = initMap;
 
 // scr="https://maps.googleapis.com/maps/api/js?key=AIzaSyALKvZu7DcQHR689o1h-jksRfdK9iE3KmY&callback=initMap"
 
