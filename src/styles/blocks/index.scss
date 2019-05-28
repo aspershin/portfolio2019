@@ -3,6 +3,7 @@
     background-size: cover;
     border: 1px solid red;
     position: relative;
+    text-align: center;
 }
 
 .hero__links {
@@ -29,9 +30,11 @@
     border-radius: 50%;
 }
 
+.user__description {
+    color: rgba($color: #fff, $alpha: .7)
+}
+
 .hero__title {
-    position: absolute;
-    margin-left: 500px;
     margin-top: 300px;
     text-align: center;
 }
