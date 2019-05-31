@@ -44,7 +44,9 @@
 }
 
 .about__left {
-    padding: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
 }
 
 .block-title {
@@ -75,8 +77,14 @@
     padding: 20px;
 }
 
+.map {
+    background: url(../../images/bg/dreamliner.jpg) center center no-repeat;
+}
+
 .footer {
+    max-height: 100px;
     background-color: rgba($color: #000000, $alpha: .7);
+    margin-top: -100px;
     display: flex;
     justify-content: space-between;
 }
