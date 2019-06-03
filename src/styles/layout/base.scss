@@ -17,6 +17,8 @@ body {
   overflow: hidden;
   min-height: 100%;
   position: relative;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .footer-container {
@@ -27,6 +29,7 @@ body {
 }
 
 .section {
+  max-width: 1200px;
   min-height: 650px;
   height: 100vh;
 }
