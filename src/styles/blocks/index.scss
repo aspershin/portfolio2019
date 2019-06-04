@@ -1,9 +1,9 @@
 .hero {
     background: url(../../images/bg/hero.png) no-repeat center center;
     background-size: cover;
-    border: 1px solid red;
     position: relative;
     text-align: center;
+    overflow: hidden;
 }
 
 .hero__links {
@@ -41,23 +41,40 @@
 
 .about {
     display: flex;
+    // overflow: hidden;
+    min-height: 100%;
 }
 
 .about__left {
     width: 50%;
+    height: 100%;
+    background-color: #fff;
 }
 
 .triangle-shape {
     width: 600px;
     height: 200px;
+    overflow: hidden;
 }
 
-.svg-rect {
-    fill: #6D2885;
-    stroke: #286F85;
+.triangles {
+    width: 600px;
+    height: 200px;
+    display: flex;
+    margin-top: -200px;
+    z-index: 1;
+    padding: 0;
+}
+
+.svg-rect-left {
+    fill: #fff;
     // stroke-width: 5;
     // fill-opacity: 0.7;
     // stroke-opacity: 0.8;
+}
+
+.svg-rect-right {
+    fill: beige;
 }
 
 .block-title {
@@ -85,8 +102,15 @@
 
 .about__right {
     width: 50%;
+    height: 100%;
+    overflow: hidden;
     background-color: beige;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.about__right-description.text-content {
+    color: #000000;
 }
 
 .map {

@@ -28,14 +28,18 @@ block content
           .user__name Имя Имя
           .user__desc Личный сайт
     .arrow-down.hero__scroll-button
+  section.triangles
+    .triangle.about__triangle-left
+        svg(width="600", height="200").triangle-shape.triangle-shape_fill_white
+          polygon(points="0,0 600,200 0,200").svg-rect-left
+    .triangle.about__triangle-right
+        svg(width="600", height="200").triangle-shape.triangle-shape_fill_beige
+          polygon(points="0,200 600,200 600,0").svg-rect-right
   section.section.about
     .about__left
-      .triangle.about__triangle-left
-        svg(width="600", height="200").triangle-shape.triangle-shape_fill_white
-          polygon(points="0,0 600,200 0,200").svg-rect
       .about__left-title
         .block-title Обо мне
-      .about__left-description !!!
+      .about__left-description
         .user-description
           .user-description__image
             img.user-descpription__avatar
@@ -46,8 +50,6 @@ block content
             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates recusandae expedita nobis dolorum ab fuga animi illo itaque ipsam inventore.
             p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis dicta ipsum aperiam temporibus voluptates saepe nobis eos blanditiis quos expedita optio, a, aliquam obcaecati velit deleniti quisquam minus esse ullam!
     .about__right
-      .triangle.about__triangle-right
-        svg.triangle-shape.triangle-shape_fill_beige
       .about__right-title
         .block-subtitle Чем я могу быть полезен
       .about__right-description.text-content
