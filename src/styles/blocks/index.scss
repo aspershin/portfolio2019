@@ -1,5 +1,5 @@
 .hero {
-    background: url(../../images/bg/hero.png) no-repeat center center;
+    background: url(../../images/bg/hero1800.jpg) no-repeat center center;
     background-size: cover;
     position: relative;
     text-align: center;
@@ -75,13 +75,13 @@
 }
 
 .triangle-shape {
-    width: 600px;
+    width: 900px;
     height: 200px;
     overflow: hidden;
 }
 
 .triangles {
-    width: 600px;
+    width: 900px;
     height: 200px;
     display: flex;
     margin-top: -200px;
@@ -107,6 +107,7 @@
     text-transform: uppercase;
     line-height: 1.048;
     text-align: center;
+    font-weight: bold;
 }
 
 .block-subtitle {
@@ -143,10 +144,12 @@
 #map {
     height: 650px;
     border: 1px solid red;
+    background: url(../../images/bg/dreamliner2.jpg) center center no-repeat;
+    background-size: cover;
 }
 
 .footer {
-    max-width: 1200px;
+    min-width: 1900px;
     max-height: 100px;
     background-color: rgba($color: #000000, $alpha: .7);
     margin-top: -100px;
