@@ -16,10 +16,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   @include roboto();
   overflow-x: hidden;
+  background-color: rgba($color: #000, $alpha: .7)
 }
 
 .wrapper {
-  // width: 1800px;
+  width: 1800px;
   overflow: hidden;
   min-height: 100%;
   min-width: 100%;
