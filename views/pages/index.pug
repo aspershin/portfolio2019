@@ -66,8 +66,10 @@ block content
                   ul.skills-row__list
                     li.skills-row__item
                       .skill
-                        svg.skill__circle
-                          .skill__title HTML5
+                        svg(width="270" height="270").skill__circle
+                          circle(r="115" cx="135" stroke="#ccc" fill="none")
+                          circle(r="115" cx="135" stroke="crimson").sector
+                          .skill__title
   section.section.map#map
     .google-map
       .map__data

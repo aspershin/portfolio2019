@@ -167,6 +167,17 @@
     color: #000000;
 }
 
+.skill__circle {
+    fill: none;
+    stroke-width: 25;
+}
+
+.sector {
+    stroke-dasharray: 722;
+    stroke-dashoffset: 361;
+    transition: all 1s;
+}
+
 #map {
     height: 650px;
     background: url(../../images/bg/dreamliner2.jpg) center center no-repeat;
