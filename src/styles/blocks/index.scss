@@ -75,6 +75,14 @@
     background-color: #fff;
 }
 
+.about__left-title {
+    border: 1px solid darkblue;
+}
+
+.about__left-description {
+    border: 1px solid crimson;
+}
+
 .triangles {
     min-height: 100%;
     height: 200px;
@@ -118,15 +126,32 @@
 
 .user-description__image {
     text-align: center;
+    border: 1px solid green;
 }
 
 .user-descpription__avatar {
-    width: 300px;
-    min-height: 300px;
-    background-image: url(../../images/content/user-full2.jpg);
+    // width: 300px;
+    // min-height: 300px;
+    // background-image: url(../../images/content/user-full2.jpg);
     // background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // text-align: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.user-description__avatar-svg {
+    fill: yellow;
+}
+
+.blur {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.blur:hover {
+    opacity: 0;
 }
 
 .about__right {
