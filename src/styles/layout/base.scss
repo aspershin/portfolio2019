@@ -7,7 +7,7 @@ body, html {
 body {
   width: 100%;
   max-width: 100%;
-  // width: 1800px;
+  width: 1800px;
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.42;
@@ -16,7 +16,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   @include roboto();
   overflow-x: hidden;
-  background-color: rgba($color: #000, $alpha: .7)
 }
 
 .wrapper {

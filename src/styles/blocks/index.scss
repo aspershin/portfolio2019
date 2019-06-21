@@ -76,13 +76,11 @@
 }
 
 .triangles {
-    // width: 900px;
     min-height: 100%;
     height: 200px;
     margin-top: -200px;
     z-index: 1;
     padding: 0;
-    background-color: crimson;
 }
 
 .svg-rect-left {
@@ -139,7 +137,6 @@
 
 #map {
     height: 650px;
-    border: 1px solid red;
     background: url(../../images/bg/dreamliner2.jpg) center center no-repeat;
     background-size: cover;
 }
@@ -147,7 +144,7 @@
 .footer {
     max-height: 100px;
     min-width: 100%;
-    background-color: rgba($color: #000000, $alpha: .7);
+    background-color: rgba($color: #000, $alpha: .7);
     margin-top: -100px;
     display: flex;
     justify-content: space-between;
