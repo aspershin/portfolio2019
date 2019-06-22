@@ -40,6 +40,16 @@
     text-align: center;
 }
 
+.arrow-down {
+    width: 50px;
+    min-height: 50px;
+    background-image: url("../../images/icons/arrow_down.svg") center center no-repeat;
+    text-align: center;
+    position: absolute;
+    left: 900px;
+    background-color: green;
+}
+
 .socials__link {
     text-decoration: none;
 }
@@ -48,8 +58,8 @@
   
 .section-title__img {
     background-image: url(../../images/content/user-full.jpg);
-    width: 200px;
-    min-height: 200px;
+    width: 140px;
+    min-height: 140px;
     background-size: cover;
     border-radius: 50%;
 }
@@ -59,8 +69,9 @@
 }
 
 .hero__title {
-    margin-top: 300px;
+    margin-top: 200px;
     text-align: center;
+    vertical-align: top;
 }
 
 .about {
@@ -72,8 +83,8 @@
 
 .about__left {
     width: 50%;
-    height: 100%;
-    background-color: #fff;
+    min-height: 100%;
+    background-color: #f2f0e8;
 }
 
 .about__left-title {
@@ -97,32 +108,45 @@
     width: 100%;
 }
 
-
-
 .svg-rect-left {
-    fill: #fff;
+    fill: #f2f0e8;
     // stroke-width: 5;
     // fill-opacity: 0.7;
     // stroke-opacity: 0.8;
 }
 
 .svg-rect-right {
-    fill: beige;
+    fill: #eae8e2;
 }
 
 .block-title {
     font-size: 62.792px;
-    font-family: "SansusWebissimo";
+    font-family: "sansuswebissimo";
     color: rgb(71, 75, 87);
     text-transform: uppercase;
     line-height: 1.048;
     text-align: center;
-    font-weight: bold;
+    // font-weight: bold;
+}
+
+.about__right-title {
+    text-align: center;
+    border: 1px solid crimson;
+
 }
 
 .block-subtitle {
+    width: 265px;
+    min-height: 65px;
     text-align: center;
     margin: 10px;
+    font-size: 35px;
+    font-family: "sansuswebissimo";
+    color: rgb(71, 75, 87);
+    text-transform: uppercase;
+    line-height: 1.171;
+    border: 1px solid crimson;
+    display: inline-block;
 }
 
 .user-description__image {
@@ -159,9 +183,10 @@
     width: 50%;
     height: 100%;
     overflow: hidden;
-    background-color: beige;
+    background-color: #eae8e2;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 .about__right-description.text-content {

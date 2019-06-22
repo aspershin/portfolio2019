@@ -9,6 +9,15 @@
   font-display: block;
 }
 
+@font-face {
+  font-family: 'sansuswebissimo';
+  src: url('/fonts/sansuswebissimo-webfont.woff2') format('woff2'),
+       url('fonts/sansuswebissimo-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 @mixin bernier() {
   font-family: 'bernier', Times, serif;
 }
