@@ -5,6 +5,23 @@
     text-align: center;
     overflow: hidden;
     height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__links-hamburger {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    border: 1px solid lightgreen;
+    width: 100%;
+}
+
+.hamburger {
+    width: 50px;
+    height: 50px;
+    border: 1px solid pink;
 }
 
 .hero__links {
@@ -17,10 +34,6 @@
     display: flex;
     flex-direction: row;
     padding: 5px;
-}
-
-.user__pic {
-    width: 100px;
 }
 
 .user__name {
@@ -38,23 +51,24 @@
     color: rgb(255, 255, 255);
     line-height: 1.5;
     text-align: center;
+    border: 1px solid red;
 }
 
 .arrow-down {
     width: 50px;
     min-height: 50px;
-    background-image: url("../../images/icons/arrow_down.svg") center center no-repeat;
+    background: url(../../images/icons/arrow_down.svg) center center no-repeat;
+    // overflow: hidden;
     text-align: center;
-    position: absolute;
-    left: 900px;
-    background-color: green;
+    margin-top: 30px;
+    // position: absolute;
+    // left: 900px;
+    // background-color: green;
 }
 
 .socials__link {
     text-decoration: none;
 }
-      
-
   
 .section-title__img {
     background-image: url(../../images/content/user-full.jpg);
@@ -64,14 +78,31 @@
     border-radius: 50%;
 }
 
+.user {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
 .user__description {
-    color: rgba($color: #fff, $alpha: .7)
+    color: rgba($color: #fff, $alpha: .7);
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border: 1px solid violet;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero__title {
+    width: 300px;
     margin-top: 200px;
     text-align: center;
     vertical-align: top;
+    border: 1px salmon solid;
+    display: flex;
+    flex-direction: column;;
+    align-items: center;
 }
 
 .about {

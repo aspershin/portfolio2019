@@ -5,29 +5,30 @@ block variables
 
 block content
   section.section.hero
-    .hero__links
-      - 
-        var socials = [
-          ['vk', 'vk.com'],
-          ['tw', 'twitter.com'],
-          ['in', 'in.com'],
-        ]
-      ul.socials
-        each item in socials
-          li.socials.item
-          - console.log(item)
-            a(href=`${item[1]}`).socials__link #{item[0]}
-    .hero__menu.hamburger
+    .hero__links-hamburger
+      .hero__links
+        - 
+          var socials = [
+            ['vk', 'vk.com'],
+            ['tw', 'twitter.com'],
+            ['in', 'in.com'],
+          ]
+        ul.socials
+          each item in socials
+            li.socials.item
+            - console.log(item)
+              a(href=`${item[1]}`).socials__link #{item[0]}
+      .hero__menu.hamburger
     .hero__title  
       .section-title
         img.section-title__img
       .user.hero__user
-        .user__pic
-          img.user__avatar
         .user__description
           .user__name Имя Имя
           .user__desc Личный сайт
-    .arrow-down.hero__scroll-button 123
+          .user__desc Личный сайт
+          img(src="../../images/icons/arrow_down.svg").arrow-down
+          //- .hero__scroll-button
   section.triangles
     svg(viewbox="0 0 1800 200" width="1800" height="200" preserveaspectratio="none").triangles-svg
       polygon(points="0,0 0,201 900.8,201 900.8,190.5").svg-rect-left

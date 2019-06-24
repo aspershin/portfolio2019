@@ -116,23 +116,23 @@ gulp.task(
 //       .pipe($gp.replace("&gt;", ">"));
 //   };
 
-//   prettySvgs()
-//     .pipe(
-//       $gp.svgSprite({
-//         mode: {
-//           symbol: {
-//             sprite: "../sprite.svg"
-//           }
-//         }
-//       })
-//     )
-//     .pipe(gulp.dest(`${DIST_DIR}/images/icons`));
+//   // prettySvgs()
+//   //   .pipe(
+//   //     $gp.svgSprite({
+//   //       mode: {
+//   //         symbol: {
+//   //           sprite: "../sprite.svg"
+//   //         }
+//   //       }
+//   //     })
+//   //   )
+//   //   .pipe(gulp.dest(`${DIST_DIR}/images/icons`));
 
-//   prettySvgs().pipe(
-//     $gp.sassInlineSvg({
-//       destDir: `${SRC_DIR}/styles/icons/`
-//     })
-//   );
+//   // prettySvgs().pipe(
+//   //   $gp.sassInlineSvg({
+//   //     destDir: `${SRC_DIR}/styles/icons/`
+//   //   })
+//   // );
 
 //   done();
 // });
