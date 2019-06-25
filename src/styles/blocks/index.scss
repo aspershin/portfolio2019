@@ -12,16 +12,28 @@
 
 .hero__links-hamburger {
     display: flex;
-    align-items: stretch;
     justify-content: space-between;
     border: 1px solid lightgreen;
     width: 100%;
 }
 
 .hamburger {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border: 1px solid pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.hamburger__item{
+    width: 40px;
+    height: 5px;
+    background-color: #FFF;
+    border-radius: 5%;
+    overflow: hidden;
 }
 
 .hero__links {
@@ -33,7 +45,8 @@
 .socials {
     display: flex;
     flex-direction: row;
-    padding: 5px;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 .user__name {
@@ -55,13 +68,13 @@
 }
 
 .arrow-down {
-    width: 50px;
-    min-height: 50px;
+    width: 30px;
+    min-height: 30px;
     background: url(../../images/content/double-arrow-down.png) center center no-repeat;
     background-size: cover;
     // overflow: hidden;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 70px;
     // position: absolute;
     // left: 900px;
     // background-color: green;

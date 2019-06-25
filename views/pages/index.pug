@@ -9,23 +9,26 @@ block content
       .hero__links
         - 
           var socials = [
-            ['vk', 'vk.com'],
-            ['tw', 'twitter.com'],
+            ['vk', 'http://vk.com/id15292604'],
+            ['tw', 'https://github.com/aspershin'],
             ['in', 'in.com'],
           ]
         ul.socials
           each item in socials
             li.socials.item
             - console.log(item)
-              a(href=`${item[1]}`).socials__link #{item[0]}
-      .hero__menu.hamburger
+              a(href=`${item[1]}` target="_blank").socials__link #{item[0]}
+      a(href="#").hero__menu
+        ul.hamburger
+          li.hamburger__item
+          li.hamburger__item
+          li.hamburger__item
     .hero__title  
       .section-title
         img.section-title__img
       .user.hero__user
         .user__description
           .user__name Имя Имя
-          .user__desc Личный сайт
           .user__desc Личный сайт
           img.arrow-down
           //- .hero__scroll-button
