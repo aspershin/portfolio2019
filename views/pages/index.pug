@@ -70,12 +70,13 @@ block content
                     li.skills-row__item
                       .skill
                         svg(width="810" height="270").skill__circle
-                          circle(r="115" cx="135" cy="135" stroke="#dfdcd5" fill="none")
-                          circle(r="115" cx="135" cy="135" stroke="#1056d1").sector
-                          circle(r="115" cx="405" cy="135" stroke="#dfdcd5" fill="none")
-                          circle(r="115" cx="405" cy="135" stroke="#1056d1").sector
-                          circle(r="115" cx="675" cy="135" stroke="#dfdcd5" fill="none")
-                          circle(r="115" cx="675" cy="135" stroke="#1056d1").sector
+                          circle(r="80" cx="135" cy="135" stroke="#dfdcd5" fill="none")
+                          circle(r="80" cx="135" cy="135" stroke="#1056d1" transform="rotate(-90 135 135)").sector
+                          //- text(x="135" y="135" fill="#243994" font-size="14" font-family="Roboto") HTML5
+                          circle(r="80" cx="405" cy="135" stroke="#dfdcd5" fill="none")
+                          circle(r="80" cx="405" cy="135" stroke="#1056d1" transform="rotate(-90 405 135)").sector
+                          circle(r="80" cx="675" cy="135" stroke="#dfdcd5" fill="none")
+                          circle(r="80" cx="675" cy="135" stroke="#1056d1" transform="rotate(-90 675 135)").sector
                           .skill__title
   section.section.map#map
     .google-map
