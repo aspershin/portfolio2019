@@ -89,53 +89,53 @@ gulp.task(
 );
 
 // спрайт иконок + инлайн svg
-// gulp.task("svg", done => {
-//   const prettySvgs = () => {
-//     return gulp
-//       .src(`${SRC_DIR}/images/icons/*.svg`)
-//       .pipe(
-//         $gp.svgmin({
-//           js2svg: {
-//             pretty: true
-//           }
-//         })
-//       )
-//       .pipe(
-//         $gp.cheerio({
-//           run($) {
-//             $("[fill], [stroke], [style], [width], [height]")
-//               .removeAttr("fill")
-//               .removeAttr("stroke")
-//               .removeAttr("style")
-//               .removeAttr("width")
-//               .removeAttr("height");
-//           },
-//           parserOptions: { xmlMode: true }
-//         })
-//       )
-//       .pipe($gp.replace("&gt;", ">"));
-//   };
+gulp.task("svg", done => {
+  const prettySvgs = () => {
+    return gulp
+      .src(`${SRC_DIR}/images/icons/*.svg`)
+      .pipe(
+        $gp.svgmin({
+          js2svg: {
+            pretty: true
+          }
+        })
+      )
+      .pipe(
+        $gp.cheerio({
+          run($) {
+            $("[fill], [stroke], [style], [width], [height]")
+              .removeAttr("fill")
+              .removeAttr("stroke")
+              .removeAttr("style")
+              .removeAttr("width")
+              .removeAttr("height");
+          },
+          parserOptions: { xmlMode: true }
+        })
+      )
+      .pipe($gp.replace("&gt;", ">"));
+  };
 
-//   // prettySvgs()
-//   //   .pipe(
-//   //     $gp.svgSprite({
-//   //       mode: {
-//   //         symbol: {
-//   //           sprite: "../sprite.svg"
-//   //         }
-//   //       }
-//   //     })
-//   //   )
-//   //   .pipe(gulp.dest(`${DIST_DIR}/images/icons`));
+  prettySvgs()
+    .pipe(
+      $gp.svgSprite({
+        mode: {
+          symbol: {
+            sprite: "../sprite.svg"
+          }
+        }
+      })
+    )
+    .pipe(gulp.dest(`${DIST_DIR}/images/icons`));
 
-//   // prettySvgs().pipe(
-//   //   $gp.sassInlineSvg({
-//   //     destDir: `${SRC_DIR}/styles/icons/`
-//   //   })
-//   // );
+  prettySvgs().pipe(
+    $gp.sassInlineSvg({
+      destDir: `${SRC_DIR}/styles/icons/`
+    })
+  );
 
-//   done();
-// });
+  done();
+});
 
 // просто переносим картинки
 gulp.task("images", () => {
@@ -158,7 +158,7 @@ gulp.task(
   "default",
   gulp.series(
     "clean",
-    gulp.parallel("styles", "images", "fonts", "scripts"), // "svg"
+    gulp.parallel("styles", "images", "fonts", "scripts", "svg"), // "svg"
     gulp.parallel("watch", "server")
   )
 );
