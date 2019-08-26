@@ -100,9 +100,16 @@ block content
       .footer__col.footer__col--left
         nav.menu
           ul.menu__list
-            each item in ['Мои работы', 'Обо мне', 'Блог', 'Авторизация']
+            -
+              var links = [
+                ['Мои работы', 'works'],
+                ['Обо мне', 'about'],
+                ['Блог', 'blog'],
+                ['Авторизация', 'welcome']
+              ]
+            each item in links
               li.menu__item
-                a(href="#").menu__link #{item}
+                a(href=`${item[1]}`).menu__link #{item[0]}
       .footer__col.footer__col--right
         ul.socials.socials--rounded
         each item in socials
