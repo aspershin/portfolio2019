@@ -67,7 +67,7 @@
 .arrow-down {
     width: 30px;
     min-height: 30px;
-    background: url(/images/content/down-arrow-png.jpg) center center no-repeat;
+    background: url(/images/content/down-arrow.png) center center no-repeat;
     background-size: cover;
     // overflow: hidden;
     text-align: center;
@@ -75,6 +75,7 @@
     // position: absolute;
     // left: 900px;
     // background-color: green;
+    z-index: 100;
 }
 
 .socials__link {
