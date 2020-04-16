@@ -158,7 +158,7 @@ gulp.task(
   "default",
   gulp.series(
     "clean",
-    gulp.parallel("styles", "images", "fonts", "scripts"), // "svg"
+    gulp.parallel("styles", "images", "fonts", "scripts", "svg"), // "svg"
     gulp.parallel("watch", "server")
   )
 );

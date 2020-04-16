@@ -168,8 +168,8 @@
 }
 
 .block-subtitle {
-    width: 265px;
-    min-height: 65px;
+    // width: 265px;
+    // min-height: 65px;
     text-align: center;
     margin: 10px;
     font-size: 35px;
@@ -240,6 +240,10 @@
     transition: all 1s;
 }
 
+.map__data {
+    text-align: center;
+}
+
 #map {
     height: 650px;
     background: url(../../images/bg/dreamliner2.jpg) center center no-repeat;
@@ -280,4 +284,38 @@
 .footer__col--right {
     display: flex;
     flex-direction: row; 
+}
+
+.contacts {
+    border: 1px red solid;
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: rgba($color: #fff, $alpha: .5);
+}
+
+.contacts__list {
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    flex-wrap: wrap;
+    border: 1px green dashed;
+}
+
+.contacts-row__icon {
+    background: url(../../images/content/icons8-skype-26-black.png) center center no-repeat;
+    // background-color: green;
+    color: black;
+    width: 26px;
+    height: 26px;
+}
+
+.contacts-row__icon:hover {
+    background: url(../../images/content/icons8-skype-26-blue.png) center center no-repeat;
+}
+
+.contacts-row {
+    height: 20px;
+    width: 100px;
 }
