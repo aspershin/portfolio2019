@@ -1,22 +1,22 @@
 extends ../main.layout.pug
 
 block variables
-  - var title = 'Главная страница'
+  - var title = 'Личная страничка Бендера Родригеса'
 
 block content
   section.section.hero
     .hero__links-hamburger
       .hero__links
-        - 
-          var socials = [
-            ['vk', 'http://vk.com/id15292604'],
-            ['tw', 'https://github.com/aspershin'],
-            ['in', 'in.com'],
-          ]
         ul.socials
+          -
+            var socials = [
+              ['', 'http://vk.com/id15292604'],
+              ['', 'https://github.com/aspershin'],
+              ['', 'https://www.facebook.com/andrey.pershin.501'],
+              ['', 'https://www.instagram.com/andreiser25']
+            ]
           each item in socials
-            li.socials.item
-            - console.log(item)
+            li.socials__item
               a(href=`${item[1]}` target="_blank").socials__link #{item[0]}
       a(href="#").hero__menu
         ul.hamburger
@@ -87,18 +87,20 @@ block content
           ul.contacts__list
             -
               var contacts = [
-                ['', 'skype_kdn'],
-                ['', 'skype_kdn'],
-                ['', 'skype_kdn'],
-                ['', 'skype_kdn']
+                ['', '8(800)000-00-00','tel:+78000000000'],
+                ['', 'aspershi@gmail.com', 'mailto:aspershi@gmail.com'],
+                ['', 'anderbite', '#']
               ]
             each item in contacts
               li.contacts__item.contacts-row   
-                .contacts-row__icon #{item[0]}
-                .contacts-row__title #{item[1]}
+                a(href=`${item[2]}`).contacts-row__icon #{item[0]}
+                a(href=`${item[2]}`).contacts-row__title #{item[1]}
   footer.footer
-    .footer__row
-      .footer__col.footer__col--left
+    .footer__row.footer__row--left
+      .text-content
+        p Этот сайт я сделал в рамках обучения в Школе онлайн-образования <strong>LoftSchool</strong>.
+    .footer__row.footer__row--middle
+      .footer__col.footer__col--high
         nav.menu
           ul.menu__list
             -
@@ -111,13 +113,12 @@ block content
             each item in links
               li.menu__item
                 a(href=`${item[1]}`).menu__link #{item[0]}
-      .footer__col.footer__col--right
+      .footer__col.footer__col--low
         ul.socials.socials--rounded
-        each item in socials
-          li.socials.item
-          - console.log(item)
-            a(href=`${item[1]}`).socials__link #{item[0]}
-    .footer__row
+          each item in socials
+            li.socials__item
+              a(href=`${item[1]}`).socials__link #{item[0]}
+    .footer__row.footer__row--right
       .footer__col.footer__col--left
         .text-content
           p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, voluptatum!

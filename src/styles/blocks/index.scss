@@ -40,11 +40,72 @@
     justify-content: start;
 }
 
+
+// Социалки
+
 .socials {
+    padding: 10px;
+    width: 150px;
+    height: 30px;
     display: flex;
     flex-direction: row;
-    margin-left: 30px;
-    margin-top: 30px;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.socials__item {
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: black;
+    width: 30px;
+    height: 30px;
+}
+
+.socials__link {
+    // text-decoration: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: black;
+    width: 26px;
+    height: 26px;
+    display: block;
+}
+
+// VK
+.socials li:nth-child(1) .socials__link {
+    background-image: url(../../images/content/icons/vk-26-black.png);
+}
+
+.socials li:nth-child(1) .socials__link:hover {
+    background-image: url(../../images/content/icons/vk-26-blue.png);
+}
+
+// github
+.socials li:nth-child(2) .socials__link {
+    background-image: url(../../images/content/icons/github-32-black.png);
+}
+
+.socials li:nth-child(2) .socials__link:hover {
+    background-image: url(../../images/content/icons/github-32-blue.png);
+}
+
+// Facebook
+.socials li:nth-child(3) .socials__link {
+    background-image: url(../../images/content/icons/facebook-26-black.png);
+}
+
+.socials li:nth-child(3) .socials__link:hover {
+    background-image: url(../../images/content/icons/facebook-26-blue.png);
+}
+
+// Instagram
+.socials li:nth-child(4) .socials__link {
+    background-image: url(../../images/content/icons/instagram-26-monodark.png);
+}
+
+.socials li:nth-child(4) .socials__link:hover {
+    background-image: url(../../images/content/icons/instagram-26-color.png);
 }
 
 .user__name {
@@ -76,10 +137,6 @@
     // left: 900px;
     // background-color: green;
     z-index: 100;
-}
-
-.socials__link {
-    text-decoration: none;
 }
   
 .section-title__img {
@@ -241,23 +298,44 @@
 }
 
 .map__data {
+    height: 600px;
     text-align: center;
 }
 
 #map {
     height: 650px;
-    background: url(../../images/bg/dreamliner2.jpg) center center no-repeat;
+    background: url(../../images/content/map.jpg) center center no-repeat;
     background-size: cover;
 }
 
+// Футер
+
 .footer {
-    max-height: 100px;
+    height: 70px;
     min-width: 100%;
     background-color: rgba($color: #000, $alpha: .7);
     margin-top: -100px;
     display: flex;
     justify-content: space-between;
 }
+
+.footer__row {
+    display: flex;
+    width: 33.3%;
+    height: 50px;
+}
+
+.footer__row--middle {
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer__col--low {
+    display: flex;
+    flex-direction: row; 
+}
+
+
 
 .menu__list {
     display: flex;
@@ -281,41 +359,71 @@
     color: rgba($color: #fff, $alpha: .7);
 }
 
-.footer__col--right {
-    display: flex;
-    flex-direction: row; 
-}
-
 .contacts {
-    border: 1px red solid;
-    width: 300px;
+    width: 250px;
     height: 200px;
-    margin: 0 auto;
+    margin: 150px auto;
     background-color: rgba($color: #fff, $alpha: .5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contacts__list {
-    height: 60px;
+    width: 210px;
+    height: 120px;
     display: flex;
     justify-content: space-around;
-    text-align: left;
+    flex-direction: column;
+    text-align: center;
     flex-wrap: wrap;
-    border: 1px green dashed;
+    align-items: center;
+}
+
+.contacts__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 200px;
+    height: 26px;
 }
 
 .contacts-row__icon {
-    background: url(../../images/content/icons8-skype-26-black.png) center center no-repeat;
-    // background-color: green;
+    background-position: center center;
+    background-repeat: no-repeat;
     color: black;
     width: 26px;
     height: 26px;
 }
 
-.contacts-row__icon:hover {
-    background: url(../../images/content/icons8-skype-26-blue.png) center center no-repeat;
+.contacts-row__title {
+    padding: 10px;
 }
 
-.contacts-row {
-    height: 20px;
-    width: 100px;
+// phone
+.contacts__list li:nth-child(1) .contacts-row__icon {
+    background-image: url(../../images/content/icons/phone-26-black.png);
+}
+
+.contacts__list li:nth-child(1) .contacts-row__icon:hover {
+    background-image: url(../../images/content/icons/phone-26-green.png);
+}
+
+// e-mail
+.contacts__list li:nth-child(2) .contacts-row__icon {
+    background-image: url(../../images/content/icons/mail-26-black.png);
+}
+
+.contacts__list li:nth-child(2) .contacts-row__icon:hover {
+    background-image: url(../../images/content/icons/mail-26-blue.png);
+}
+
+// skype
+.contacts__list li:nth-child(3) .contacts-row__icon {
+    background-image: url(../../images/content/icons/skype-26-black.png);
+}
+
+.contacts__list li:nth-child(3) .contacts-row__icon:hover {
+    background-image: url(../../images/content/icons/skype-26-blue.png);
 }
