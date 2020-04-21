@@ -1,0 +1,34 @@
+extends ../main.layout.pug
+
+block content
+  .container-login
+    form(action="").form
+      .form-upper.form-upper--welcome
+        .hero__title.hero__title--title
+          .section-title
+            img.section-title__img
+          .user.hero__user
+            .user__description
+              .user__name Бендер Родригес
+              .user__desc Личный сайт
+        .hero__links.hero__links--welcome
+          ul.socials
+            -
+              var socials = [
+                ['', 'http://vk.com/id15292604'],
+                ['', 'https://github.com/aspershin'],
+                ['', 'https://www.facebook.com/andrey.pershin.501'],
+                ['', 'https://www.instagram.com/andreiser25']
+              ]
+            each item in socials
+              li.socials__item
+                a(href=`${item[1]}` target="_blank").socials__link #{item[0]}
+      .form-low
+        .form-low-left.form-low-left--welcome
+          a(href="#") Мои работы  
+        .form-low-left.form-low-left--welcome
+          a(href="#") Обо мне
+        .form-low-left.form-low-left--welcome
+          a(href="#") Блог
+    .text-content.text-content-login
+      p &#169 Андрей Першин | Создано с любовью и старанием в Loftschool | 2017

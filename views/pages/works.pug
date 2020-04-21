@@ -51,11 +51,13 @@ block content
                 image(x="450" y="20" width="500" height="500" xlink:href="../../images/content/user-full2.jpg")
                 image(x="450" y="20" width="500" height="500" xlink:href="../../images/content/user-full2.jpg" style="filter: url(#blurFilter);").blur 
           .user-description__title
-            .block-subtitle Кто я
+            .block-subtitle
+              p Кто я
+              p ----
           .user-description__text
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum hic accusamus dolorum ut soluta, officiis aspernatur quas dolor est delectus molestiae adipisci quibusdam corporis aut ad aliquid sunt ipsam. Excepturi soluta commodi molestiae nihil nam sed, adipisci necessitatibus similique fuga fugit quae aliquam eligendi tempora, incidunt, placeat ad harum vitae?
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates recusandae expedita nobis dolorum ab fuga animi illo itaque ipsam inventore.
-            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis dicta ipsum aperiam temporibus voluptates saepe nobis eos blanditiis quos expedita optio, a, aliquam obcaecati velit deleniti quisquam minus esse ullam!
+            p <strong>Бендер</strong>, полное имя <strong>Бендер Сгибальщик Родригес</strong> (англ. <em>Bender Bending Rodriguez</em> — дословно «Сгибальщик Сгибающий Родригес») модель — <strong>Сгибающий модуль 22</strong> серийный номер 2716057 — герой мультсериала «<span class="text-color-blue">Футурама</span>», робот-сгибальщик.
+            p Бендер — комический антигерой, сквернослов, алкоголик, заядлый курильщик сигар, клептоман, повар (его еда в большинстве случаев по меньшей мере несъедобна, часто опасна для жизни). В критической ситуации зачастую единственный, кто впадает в панику. В серии Benderama он был полным лентяем. Обычно Бендер ведёт себя как законченный эгоист, циник, мизантроп, однако изредка в нём просыпается сочувствие (например, к черепахе в эпизоде «Crimes of the Hot») и дружеская привязанность к Фраю. В некоторых эпизодах <span class="text-color-blue"><em>Футурамы</em></span> Бендер является главным действующим лицом.
+            p Уже в первом эпизоде мультсериала Бендер нарушает все три закона робототехники — смотрит, как избивают человека, отказывается ему помогать и пытается покончить с собой.
     .about__right
       .block-subtitle Чем я могу быть полезен
       .about__right-description.text-content
@@ -108,7 +110,8 @@ block content
                 ['Мои работы', 'works'],
                 ['Обо мне', 'about'],
                 ['Блог', 'blog'],
-                ['Авторизация', 'login']
+                ['Авторизация', 'login'],
+                ['Добро пожаловать', 'welcome']
               ]
             each item in links
               li.menu__item

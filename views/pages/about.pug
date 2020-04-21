@@ -1,4 +1,130 @@
 extends ../main.layout.pug
 
+block variables
+  - var title = 'Личная страничка Бендера Родригеса'
+
 block content
-  h1 Страница обо мне
+  section.section.hero
+    .hero__links-hamburger
+      .hero__links
+        ul.socials
+          -
+            var socials = [
+              ['', 'http://vk.com/id15292604'],
+              ['', 'https://github.com/aspershin'],
+              ['', 'https://www.facebook.com/andrey.pershin.501'],
+              ['', 'https://www.instagram.com/andreiser25']
+            ]
+          each item in socials
+            li.socials__item
+              a(href=`${item[1]}` target="_blank").socials__link #{item[0]}
+      a(href="#").hero__menu
+        ul.hamburger
+          li.hamburger__item
+          li.hamburger__item
+          li.hamburger__item
+    .hero__title  
+      .section-title
+        img.section-title__img
+      .user.hero__user
+        .user__description
+          .user__name Бендер Родригес
+          .user__desc Личный сайт
+          a(href="#").arrow-down
+          //- .hero__scroll-button
+  section.triangles
+    svg(viewbox="0 0 1800 200" width="1800" height="200" preserveaspectratio="none").triangles-svg
+      polygon(points="0,0 0,201 900.8,201 900.8,190.5").svg-rect-left
+      polygon(points="1800,0 1800,201 900,201 900,190.5").svg-rect-right
+  section.section.about
+    .about__left
+      .about__left-title
+        .block-title Обо мне
+      .about__left-description
+        .user-description
+          .user-description__image
+            .user-descpription__avatar
+              svg(viewbox="0 0 900 650" width="500" height="500" preserveaspectratio="none").user-description__avatar-svg
+                defs
+                  filter#blurFilter
+                    feGaussianBlur(stdDeviation="3")
+                image(x="450" y="20" width="500" height="500" xlink:href="../../images/content/user-full2.jpg")
+                image(x="450" y="20" width="500" height="500" xlink:href="../../images/content/user-full2.jpg" style="filter: url(#blurFilter);").blur 
+          .user-description__title
+            .block-subtitle
+              p Кто я
+              p ----
+          .user-description__text
+            p <strong>Бендер</strong>, полное имя <strong>Бендер Сгибальщик Родригес</strong> (англ. <em>Bender Bending Rodriguez</em> — дословно «Сгибальщик Сгибающий Родригес») модель — <strong>Сгибающий модуль 22</strong> серийный номер 2716057 — герой мультсериала «<span class="text-color-blue">Футурама</span>», робот-сгибальщик.
+            p Бендер — комический антигерой, сквернослов, алкоголик, заядлый курильщик сигар, клептоман, повар (его еда в большинстве случаев по меньшей мере несъедобна, часто опасна для жизни). В критической ситуации зачастую единственный, кто впадает в панику. В серии Benderama он был полным лентяем. Обычно Бендер ведёт себя как законченный эгоист, циник, мизантроп, однако изредка в нём просыпается сочувствие (например, к черепахе в эпизоде «Crimes of the Hot») и дружеская привязанность к Фраю. В некоторых эпизодах <span class="text-color-blue"><em>Футурамы</em></span> Бендер является главным действующим лицом.
+            p Уже в первом эпизоде мультсериала Бендер нарушает все три закона робототехники — смотрит, как избивают человека, отказывается ему помогать и пытается покончить с собой.
+    .about__right
+      .block-subtitle Чем я могу быть полезен
+      .about__right-description.text-content
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus perspiciatis quis voluptatum vero molestiae officia nemo. Eos, beatae, blanditiis accusantium cumque harum aut autem, qui officia veritatis amet recusandae voluptate inventore incidunt in. Dolore ipsum quis vitae. Ducimus, autem ex!
+      .about__right-content
+        ul.skills-list
+          each item in ['Frontend', 'Backend', 'WorkFlow']
+            li.skills-list-item
+              .skills-row
+                .skills-row__title #{item}
+                  ul.skills-row__list
+                    li.skills-row__item
+                      .skill
+                        svg(width="810" height="270").skill__circle
+                          circle(r="80" cx="135" cy="135" stroke="#dfdcd5" fill="none")
+                          circle(r="80" cx="135" cy="135" stroke="#1056d1" transform="rotate(-90 135 135)").sector
+                          //- text(x="135" y="135" fill="#243994" font-size="14" font-family="Roboto") HTML5
+                          circle(r="80" cx="405" cy="135" stroke="#dfdcd5" fill="none")
+                          circle(r="80" cx="405" cy="135" stroke="#1056d1" transform="rotate(-90 405 135)").sector
+                          circle(r="80" cx="675" cy="135" stroke="#dfdcd5" fill="none")
+                          circle(r="80" cx="675" cy="135" stroke="#1056d1" transform="rotate(-90 675 135)").sector
+                          .skill__title
+  section.section.map#map
+    .google-map
+      .map__data
+        .contacts
+          .contacts__title
+            .block-subtitle Контакты
+          ul.contacts__list
+            -
+              var contacts = [
+                ['', '8(800)000-00-00','tel:+78000000000'],
+                ['', 'aspershi@gmail.com', 'mailto:aspershi@gmail.com'],
+                ['', 'anderbite', '#']
+              ]
+            each item in contacts
+              li.contacts__item.contacts-row   
+                a(href=`${item[2]}`).contacts-row__icon #{item[0]}
+                a(href=`${item[2]}`).contacts-row__title #{item[1]}
+  footer.footer
+    .footer__row.footer__row--left
+      .text-content
+        p Этот сайт я сделал в рамках обучения в Школе онлайн-образования <strong>LoftSchool</strong>.
+    .footer__row.footer__row--middle
+      .footer__col.footer__col--high
+        nav.menu
+          ul.menu__list
+            -
+              var links = [
+                ['Мои работы', 'works'],
+                ['Обо мне', 'about'],
+                ['Блог', 'blog'],
+                ['Авторизация', 'login'],
+                ['Добро пожаловать', 'welcome']
+              ]
+            each item in links
+              li.menu__item
+                a(href=`${item[1]}`).menu__link #{item[0]}
+      .footer__col.footer__col--low
+        ul.socials.socials--rounded
+          each item in socials
+            li.socials__item
+              a(href=`${item[1]}`).socials__link #{item[0]}
+    .footer__row.footer__row--right
+      .footer__col.footer__col--left
+        .text-content
+          p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, voluptatum!
+      .footer__col.footer__col--right
+        .text-content
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolor?
