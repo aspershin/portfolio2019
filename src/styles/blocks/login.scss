@@ -1,13 +1,15 @@
 .container-login {
   height: 100vh;
   width: 100%;
-  background: url(/images/bg/hero1200.png) center center no-repeat;
+  background: rgba(0,0,0,0.6);
+  // background: url(/images/bg/hero1200.png) center center no-repeat;
   background-size: cover;
   margin: auto;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  z-index: 4;
 }
 
 .text-content-login {
@@ -180,7 +182,7 @@
 
 .form-low-left {
   width: 190px;
-  height: 45px;
+  height: 45px; 
   border-right: 1px gray solid;
   font-family: 'Roboto';
   font-size: 16px;
@@ -225,4 +227,11 @@
 
 .form-button:hover {
   background-color: #083c96;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
