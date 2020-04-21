@@ -29,7 +29,7 @@
 .hamburger__item{
     width: 40px;
     height: 5px;
-    background-color: lightgreen;
+    background-color: #fff;
     border-radius: 5%;
     overflow: hidden;
 }
@@ -157,7 +157,7 @@
     color: rgba($color: #fff, $alpha: .7);
     display: flex;
     flex-direction: column;
-    width: 200px;
+    // width: 300px;
     align-items: center;
     justify-content: center;
 }
@@ -328,6 +328,8 @@
 .footer__row--middle {
     justify-content: space-between;
     flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
 .footer__col--low {
@@ -351,12 +353,13 @@
 
 .menu__link {
     color: #FFF;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .text-content {
     font-size: 12px;
     color: rgba($color: #fff, $alpha: .7);
+    padding: 10px;
 }
 
 .contacts {

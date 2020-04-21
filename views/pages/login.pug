@@ -1,0 +1,35 @@
+extends ../main.layout.pug
+
+block content
+  .container-login
+    form(action="").form
+      .form-upper
+        .form-title Авторизуйтесь
+        .form-input
+          .form-input__login
+            .form-input__img--login
+              img.form-input__img--login-pic
+            input(type="text" placeholder="Логин").form-input__text
+          .form-input__login
+            .form-input__img--password
+              img.form-input__img--password-pic
+            input(type="text" placeholder="Пароль").form-input__text
+        .IsHuman
+          input(type="checkbox" id="form-input").form-input__check.visually-hidden
+          label(for="form-input").form-input__label Я человек
+        .IsRobot
+          label.IsRobot-title Вы точно не робот?
+          .IsRobot-radio
+            .IsRobot-radio--yes
+              input(type="radio" id="IsRobot-btn-yes" name="IsRobot-btn").IsRobot-btn.visually-hidden
+              label(for="IsRobot-btn-yes").form-input__label Да
+            .IsRobot-radio--no
+              input(type="radio" id="IsRobot-btn-no" name="IsRobot-btn").IsRobot-btn.visually-hidden
+              label(for="IsRobot-btn-no").form-input__label Не уверен
+      .form-low
+        .form-low-left
+          a(href="#") На главную
+        .form-low-right
+          button(type="submit").form-button Войти
+    .text-content.text-content-login
+      p &#169 Андрей Першин | Создано с любовью и старанием в Loftschool | 2017
