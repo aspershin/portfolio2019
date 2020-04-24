@@ -1,5 +1,11 @@
 extends ../main.layout.pug
 
+block variables
+  - var title = 'Авторизация'
+
+block variables
+  - var title = 'Обо мне'
+
 block content
   .container-login
     form(action="").form
@@ -33,5 +39,5 @@ block content
           button(type="submit").form-button Войти
     .text-content.text-content-login
       p &#169 Андрей Першин | Создано с любовью и старанием в Loftschool | 2017
-  video(width="100%" loop="loop" autoplay="autoplay").video-bg
-    source(src="/images/content/night.mp4")
+  video(width="100%" loop="loop" autoplay="autoplay" poster="/images/content/night_preloader.gif").video-bg
+    source(src="/images/content/night.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')

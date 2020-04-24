@@ -1,7 +1,7 @@
 extends ../main.layout.pug
 
 block variables
-  - var title = 'Личная страничка Бендера Родригеса'
+  - var title = 'Мои работы'
 
 block content
   section.section.hero
@@ -32,71 +32,76 @@ block content
           .user__desc Личный сайт
           a(href="#").arrow-down
           //- .hero__scroll-button
-  section.triangles
-    svg(viewbox="0 0 1800 200" width="1800" height="200" preserveaspectratio="none").triangles-svg
-      polygon(points="0,0 0,201 900.8,201 900.8,190.5").svg-rect-left
-      polygon(points="1800,0 1800,201 900,201 900,190.5").svg-rect-right
+  section.triangles.triangles--works
+    svg(viewbox="0 0 1800 400" width="1800" height="400" preserveaspectratio="none").triangles-svg
+      polygon(points="0,0 0,201 900.8,201 900.8,100.5").svg-rect-left.svg-rect-left--works
+      polygon(points="1800,0 1800,201 900,201 900,100.5").svg-rect-right.svg-rect-right--works
+      text(x="800" y="155").triangles-text Мои работы
   section.section.about
-    .about__left
-      .about__left-title
-        .block-title Обо мне
-      .about__left-description
-        .user-description
-          .user-description__image
-            .user-descpription__avatar
-              svg(viewbox="0 0 900 650" width="500" height="500" preserveaspectratio="none").user-description__avatar-svg
-                defs
-                  filter#blurFilter
-                    feGaussianBlur(stdDeviation="3")
-                image(x="450" y="20" width="500" height="500" xlink:href="../../images/content/user-full2.jpg")
-                image(x="450" y="20" width="500" height="500" xlink:href="../../images/content/user-full2.jpg" style="filter: url(#blurFilter);").blur 
-          .user-description__title
-            .block-subtitle
-              p Кто я
-              p ----
-          .user-description__text
-            p <strong>Бендер</strong>, полное имя <strong>Бендер Сгибальщик Родригес</strong> (англ. <em>Bender Bending Rodriguez</em> — дословно «Сгибальщик Сгибающий Родригес») модель — <strong>Сгибающий модуль 22</strong> серийный номер 2716057 — герой мультсериала «<span class="text-color-blue">Футурама</span>», робот-сгибальщик.
-            p Бендер — комический антигерой, сквернослов, алкоголик, заядлый курильщик сигар, клептоман, повар (его еда в большинстве случаев по меньшей мере несъедобна, часто опасна для жизни). В критической ситуации зачастую единственный, кто впадает в панику. В серии Benderama он был полным лентяем. Обычно Бендер ведёт себя как законченный эгоист, циник, мизантроп, однако изредка в нём просыпается сочувствие (например, к черепахе в эпизоде «Crimes of the Hot») и дружеская привязанность к Фраю. В некоторых эпизодах <span class="text-color-blue"><em>Футурамы</em></span> Бендер является главным действующим лицом.
-            p Уже в первом эпизоде мультсериала Бендер нарушает все три закона робототехники — смотрит, как избивают человека, отказывается ему помогать и пытается покончить с собой.
-    .about__right
-      .block-subtitle Чем я могу быть полезен
-      .about__right-description.text-content
-        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus perspiciatis quis voluptatum vero molestiae officia nemo. Eos, beatae, blanditiis accusantium cumque harum aut autem, qui officia veritatis amet recusandae voluptate inventore incidunt in. Dolore ipsum quis vitae. Ducimus, autem ex!
-      .about__right-content
-        ul.skills-list
-          each item in ['Frontend', 'Backend', 'WorkFlow']
-            li.skills-list-item
-              .skills-row
-                .skills-row__title #{item}
-                  ul.skills-row__list
-                    li.skills-row__item
-                      .skill
-                        svg(width="810" height="270").skill__circle
-                          circle(r="80" cx="135" cy="135" stroke="#dfdcd5" fill="none")
-                          circle(r="80" cx="135" cy="135" stroke="#1056d1" transform="rotate(-90 135 135)").sector
-                          //- text(x="135" y="135" fill="#243994" font-size="14" font-family="Roboto") HTML5
-                          circle(r="80" cx="405" cy="135" stroke="#dfdcd5" fill="none")
-                          circle(r="80" cx="405" cy="135" stroke="#1056d1" transform="rotate(-90 405 135)").sector
-                          circle(r="80" cx="675" cy="135" stroke="#dfdcd5" fill="none")
-                          circle(r="80" cx="675" cy="135" stroke="#1056d1" transform="rotate(-90 675 135)").sector
-                          .skill__title
-  section.section.map#map
-    .google-map
-      .map__data
-        .contacts
-          .contacts__title
-            .block-subtitle Контакты
-          ul.contacts__list
-            -
-              var contacts = [
-                ['', '8(800)000-00-00','tel:+78000000000'],
-                ['', 'aspershi@gmail.com', 'mailto:aspershi@gmail.com'],
-                ['', 'anderbite', '#']
-              ]
-            each item in contacts
-              li.contacts__item.contacts-row   
-                a(href=`${item[2]}`).contacts-row__icon #{item[0]}
-                a(href=`${item[2]}`).contacts-row__title #{item[1]}
+    .about__left.about__left--works
+      .block-subtitle.block-subtitle--works
+        p Сайт авиакомпании AIRPLANET
+        p -------
+      .block-subtitle-small
+        p Комфорт, сервис, доступность
+      a(href="#").about__right-button
+        .about__right-button-img
+        .about__right-button-link Посмотреть сайт
+    .about__right.about__right--works
+      .slider-up
+        .slider-up-img
+          img(src="/images/content/work-1.png", alt="work").slider-up-pic
+      .slider-low
+        .slider-low-left
+          img(src="/images/content/work-1.png", alt="work").slider-low-pic
+          .slider-low-left-wrap
+          a(href="#").slider-arrow-link
+            .slider-arrow.slider-arrow--up
+        .slider-low-right
+          img(src="/images/content/work-2.png", alt="work").slider-low-pic
+          .slider-low-right-wrap
+          a(href="#").slider-arrow-link
+            .slider-arrow.slider-arrow--low
+            a(href="#")
+            link(rel="stylesheet", href="#")
+  section.section-works
+    .form-title.form-title--works Что обо мне говорят
+    .reviews
+      .reviews-left
+        .reviews__img
+          img(src="/images/content/fry.png", alt="photo").reviews__img-pic
+        .reviews__text
+          p Бендер - мой лучший друг. Он преданный. С ним всегда весело. У него очень необычное чувство юмора для робота.
+        .reviews__name
+          p <strong>Фиилип Джей Фрай</strong>
+          p - Исполнительный курьер Planet Express
+      .reviews-right
+        .reviews__img
+          img(src="/images/content/Leela.jpg", alt="photo").reviews__img-pic
+        .reviews__text
+          p Очень невоспитанный робот. Такого экземпляра не встречала нигде во Вселенной.
+        .reviews__name
+          p <strong>Туранга Лила</strong>
+          p - Капитан космического корабля Planet Express
+    form(action="").form.works-form
+      .form-upper.form-upper-works
+        .form-title.form-title-works
+          p Связаться со мной
+          p -----
+        .form-input.form-input--works
+          .form-input__login.form-input__login--works
+            input(type="text" placeholder="Ваше имя").form-input__text.form-input__text--works
+          .form-input__login
+            input(type="text" placeholder="Ваш e-mail").form-input__text.form-input__text--works
+          .form-input__textarea
+            textarea(name="works-textarea", cols="30", rows="10" placeholder="Ваше сообщение").form-input__textarea-text
+      .form-low.form-low-works
+        .form-low-left.form-low-left--works
+          button(type="submit").form-button.form-button--works Отправить
+        .form-low-right
+          button(type="submit").form-button.form-button--works Очистить
+    a(href="#").works-arrow-link
+      .works-arrow-img
   footer.footer
     .footer__row.footer__row--left
       .text-content
