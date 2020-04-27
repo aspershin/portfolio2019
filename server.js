@@ -13,7 +13,7 @@ app.get(['/', '/:pageName'], (req, res) => {
   res.render(`pages/${pageName}.pug`, (err, html) => {
     if (err) {
       if (err.message.indexOf('Failed to lookup view') !== -1) {
-        return res.send('Страница не найдена');
+        return res.send('Страница не найдена. А ты как хотел? Ручками своими лазил, теперь страница не найдена &#128526');
       }
       throw err;
     }
