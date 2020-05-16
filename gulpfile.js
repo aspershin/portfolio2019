@@ -82,6 +82,7 @@ gulp.task(
   gulp.series("nodemon", done => {
     browserSync.init({
       proxy: "http://localhost:3000",
+      noInfo: false,
       port: 8080,
       open: true
     });

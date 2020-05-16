@@ -30,8 +30,6 @@ block content
         .user__description
           .user__name Бендер Родригес
           .user__desc Личный сайт
-          a(href="#").arrow-down
-          //- .hero__scroll-button
   section.triangles.triangles--works
     svg(viewbox="0 0 1800 400" width="1800" height="400" preserveaspectratio="none").triangles-svg
       polygon(points="0,0 0,201 900.8,201 900.8,100.5").svg-rect-left.svg-rect-left--works
@@ -39,29 +37,51 @@ block content
       text(x="800" y="155").triangles-text Мои работы
   section.section.about
     .about__left.about__left--works
-      .block-subtitle.block-subtitle--works
+      .block-subtitle.block-subtitle-works.block-subtitle-works--active
         p Сайт авиакомпании AIRPLANET
-        p -------
-      .block-subtitle-small
+      .block-subtitle.block-subtitle-works
+        p Сайт Фитнес
+      .block-subtitle.block-subtitle-works
+        p Сайт Бургер
+      .block-subtitle.block-subtitle-works
+        p Сайт Коворкинг
+      .block-subtitle-small.block-subtitle-small-work.block-subtitle-small--active
         p Комфорт, сервис, доступность
+      .block-subtitle-small.block-subtitle-small-work
+        p Фитнес, Фитнес, Фитнес
+      .block-subtitle-small.block-subtitle-small-work
+        p Бургер, Бургер, Бургер
+      .block-subtitle-small.block-subtitle-small-work
+        p Коворкинг, Коворкинг, Суперковоркинг
       a(href="#").about__right-button
         .about__right-button-img
         .about__right-button-link Посмотреть сайт
     .about__right.about__right--works
       .slider-up
         .slider-up-img
-          img(src="/images/content/work-1.png", alt="work").slider-up-pic
+          img(src="/images/content/work-1.png", alt="work").slider-up-pic.slider-up-pic--active
+          img(src="/images/content/work-2.png", alt="work").slider-up-pic
+          img(src="/images/content/work-3.png", alt="work").slider-up-pic
+          img(src="/images/content/work-4.png", alt="work").slider-up-pic
       .slider-low
         .slider-low-left
-          img(src="/images/content/work-1.png", alt="work").slider-low-pic
+          .slider-low-left-list
+            img(src="/images/content/work-1.png", alt="work").slider-low-pic.slider-low-pic--active
+            img(src="/images/content/work-2.png", alt="work").slider-low-pic
+            img(src="/images/content/work-3.png", alt="work").slider-low-pic
+            img(src="/images/content/work-4.png", alt="work").slider-low-pic
           .slider-low-left-wrap
-          a(href="#").slider-arrow-link
-            .slider-arrow.slider-arrow--up
-        .slider-low-right
-          img(src="/images/content/work-2.png", alt="work").slider-low-pic
-          .slider-low-right-wrap
-          a(href="#").slider-arrow-link
+          a(href="#").slider-arrow-link.slider-arrow-link--low
             .slider-arrow.slider-arrow--low
+        .slider-low-right
+          .slider-low-left-list
+            img(src="/images/content/work-1.png", alt="work").slider-low-pic.slider-low-pic--active
+            img(src="/images/content/work-2.png", alt="work").slider-low-pic
+            img(src="/images/content/work-3.png", alt="work").slider-low-pic
+            img(src="/images/content/work-4.png", alt="work").slider-low-pic
+          .slider-low-right-wrap
+          a(href="#").slider-arrow-link.slider-arrow-link--up
+            .slider-arrow.slider-arrow--up
             a(href="#")
             link(rel="stylesheet", href="#")
   section.section-works
